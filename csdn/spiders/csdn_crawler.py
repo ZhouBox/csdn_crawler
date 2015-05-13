@@ -12,7 +12,7 @@ class CsdnCrawlerSpider(CrawlSpider):
     start_urls = ['http://blog.csdn.net/zhx6044']
 
     rules = (
-        Rule(LinkExtractor(allow=r'article/list/[0-9]{1,20}'), callback='parse_item', follow=True),
+        Rule(LinkExtractor(allow=r'article/list/[0-14]'), callback='parse_item', follow=True),
     )
 
     def parse_item(self, response):
