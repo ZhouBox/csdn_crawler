@@ -13,4 +13,13 @@ class CsdnItem(Item):
     # name = scrapy.Field()
     title = Field()
     url = Field()
+    article = Field()
+    pass
+
+
+
+
+class CsdnArticleItem(Item):
+    title = Field()
+    article = Field()
     pass
